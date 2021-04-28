@@ -1,0 +1,91 @@
+.box {
+    margin-top: 45px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar {
+    margin-left: 265px;
+}
+
+h4 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 1.8rem;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+.des {
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.body {
+    margin-top: 75px;
+}
+
+.body h3 {
+    text-align: center;
+    font-weight: 400;
+}
+
+nav {
+    display: flex;
+}
+
+span {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.string {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+li {
+    margin: 30px 25px;
+    list-style-type: square;
+}
+
+@media only screen and (max-width: 500px) {
+    .avatar {
+        margin-left: 125px;
+    }
+    nav {
+        display: block;
+    }
+    span {
+        font-size: 17px;
+        font-weight: 100;
+    }
+    .string {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .avatar {
+        margin-left: 90px;
+    }
+    span {
+        font-size: 14px;
+        font-weight: 100;
+    }
+    .string {
+        font-size: 17px;
+    }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+
+    <link rel="icon" type="image/png" href="../image/4.png" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/timer.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="modal-bg" class="modal-bg">
+            <div class="modal" id="modal">
+                <div class="modal-header">
+                    <h4>Edit Timer</h4>
+                    <i id="close" class="fas fa-times"></i>
+                </div>
+                <div class="modal-body">
+                    <div class="case">
+                        <div class="fill">
+                            <input placeholder="00" type="number" id="hourInput" class="input"><br>
+                            <label for="hourInput">Hours</label>
+                        </div>
+                        <div class="fill">
+                            <input placeholder="00" type="number" id="minuteInput" class="input"><br>
+                            <label for="hourInput">Minute</label>
+                        </div>
+                        <div class="fill">
+                            <input placeholder="00" type="number" id="secondInput" class="input"><br>
+                            <label for="hourInput">Second</label>
+                        </div>
+                    </div>
+                    <hr class="dotted">
+                    <label>Alarm</label>
+                    <div class="group">
+                        <select id="alarmInput" class="select">
+                            <option value="not suport">--None--</option>
+                            <option value="../audio/alarm.mp3">Default</option>
+                            <option value="../audio/wind.mp3">Wind</option>
+                        </select>
+                        <div class="icons">
+                            <i id="sound" class="fas fa-volume-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" value="Done" id="submit">
+                </div>
+            </div>
+        </div>
+        <div class="loading-screen">
+            <div class="loader"></div>
+        </div>
+        <header id="header">
+            <div class="navbar">
+                <div class="group">
+                    <a href="../../index.html">
+                        <h2 class="icon-t">WClock</h2>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="center">
+            <section class="content">
+                <!-- <button id="modal-trigged">click me</button> -->
+                <h2>Onlline Timer With Alarm</h2>
+                <div class="layout-1">
+                    <div class="center">
+                        <div class="time">00 : 00 : 00</div>
+                        <div class="general">
+                            <button id="start">Start</button>
+                            <button id="stop" class="hide">Stop</button>
+                            <button id="reset">Reset</button>
+                        </div>
+                    </div>
+                    <div class="dotted"></div>
+                    <div class="layout">
+                        <span class="second-display">Timer (00 : 00 : 00)</span>
+                        <span id="alarm"><i style="cursor: default;" class="fas fa-volume"></i>--None--</span>
+                        <span class="modal-trigged" id="modal-trigged"><i class="fas fa-pencil-alt"></i>Edit</span>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer id="footer" class="classic">
+            <div class="footer-left">
+                <h3>W<span>Clock</span></h3>
+                <p class="footer-links">
+                    <a href="../index.html">Home</a> ·
+                    <a href="contact.html">Contact</a>
+                </p>
+                <p class="footer-company-name">WClock &copy; 2021</p>
+            </div>
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>Cigembor, Ciamis</span> Jawa barat, Indonesia</p>
+                </div>
+                <div>
+                    <i class="fa fa-user-circle"></i>
+
+                    <p><a>Ferdi</a></p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>About The Website</span> This is the first website I created, I hope you guys like this website, please criticize me to develop this website even better.
+                    <br><br> don't judge me because my website responsive is still bad :)
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    </div>
+    </div>
+
+    <script src="../js/timer.js"></script>
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>
